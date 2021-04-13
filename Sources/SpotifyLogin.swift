@@ -26,6 +26,11 @@ public class SpotifyLogin {
         return session?.username
     }
 
+    /// The refresh token for the current session.
+    public var refreshToken: String? {
+        return session?.refreshToken
+    }
+
     private var clientID: String?
     private var clientSecret: String?
     private var redirectURL: URL?
